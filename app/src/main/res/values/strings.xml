@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">EDS</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_splash">E.D.S.</string>
+    <string name="title_activity_taches">Liste Des Taches</string>
+    <string name="title_activity_new_task">Ajouter Nouvelle Tache</string>
+    <string name="title_activity_activitees">Liste Des Activitées</string>
+    <string name="title_activity_resultats">Liste Des Resultats</string>
+    <string name="title_activity_users">Liste Des Utilisateurs</string>
+    <string name="title_activity_dashboard_admin">Menu Administateur</string>
+    <string name="title_activity_add">Ajouter Un Utilisateur</string>
+    <string name="title_activity_show_user">Detail Utilisateur</string>
+    <string name="title_activity_edit_user">Modifier Utilisateur</string>
+    <string name="title_activity_show_resultat">ShowResultat</string>
+    <string name="title_activity_show_activitees">ShowActivitees</string>
+    <string name="title_activity_show_task">ShowTask</string>
+    <string name="title_activity_add_pointage">Ajouter Pointage</string>
+    <string name="title_activity_show_pointage">ShowPointage</string>
+    <string name="title_activity_dashbord_user">Menu Utilisateur</string>
+    <string name="title_activity_start_task">Tache Démarrée</string>
+    <string name="title_activity_make_photo">MakePhoto</string>
+    <string name="title_activity_edit_task">EditTask</string>
+    <string name="title_activity_parametre">Paramétre</string>
+    <string name="title_activity_rapport">Rapport Journalier</string>
+    <string name="dosstraites">Dossiers Traités</string>
+    <string name="numDoss">N°.Doss.</string>
+    <string name="numDossmsg">N°.Doss.</string>
+
+    <string name="client">Client</string>
+    <string name="duree">Durée</string>
+    <string name="typeact">Mission</string>
+    <string name="resultat">Resultat</string>
+    <string name="autreacts">Autre Activitees</string>
+    <string name="time">Temps</string>
+    <string name="activitee">Activitée</string>
+    <string name="fraisengages">Frais Engagés</string>
+    <string name="designiation">Désign.</string>
+    <string name="mttc">M.TTC</string>
+    <string name="title_activity_send_mail">Envoi Mail</string>
+    <string name="txtbtnarreter">Arreter</string>
+    <string name="txtbtnsuspendre">Suspendre</string>
+    <string name="lbladdcomment">Message à Transmettre</string>
+    <string name="addmsg">Ajouter un message</string>
+    <string name="codeutilisateur">code utilisateur</string>
+    <string name="lbluser"> | Connecté(e) en tant que : </string>
+    <string name="title_activity_pointage">Pointage</string>
+    <string name="txtbtnjn">Journée Normal</string>
+    <string name="txtbtnminjn">demi-Journee</string>
+    <string name="tvdupout">Sortie</string>
+    <string name="titlerj">RAPPORT JOURNALIER</string>
+    <string name="msg">Message</string>
+    <string name="comp">Désign.</string>
+    <string name="qte">Qte.</string>
+    <string name="title_activity_email_destination">EmailDestinationActivity</string>
+    <string name="title_activity_param_admin">ParamAdminActivity</string>
+    <string name="tvEmptyListAchat">La liste des achats est vide</string>
+    <string name="tvEmptyListComp">La liste des composants est vide</string>
+    <string name="tvEmptyListmsg">La liste des messages est vide</string>
+    <string name="title_activity_multi_task">MultiTaskActivity</string>
+    <string name="title_activity_add_dossier">AddDossierActivity</string>
+    <string name="title_activity_view_historique_admin">ViewHistoriqueAdminActivity</string>
+
+
+</resources>

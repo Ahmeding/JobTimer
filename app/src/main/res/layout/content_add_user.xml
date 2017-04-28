@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activities.Administrateur.GestionUser.AddUser"
+    tools:showIn="@layout/activity_add_user">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+
+
+           <!-- LL CODE USER-->
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+               <EditText
+                   android:layout_weight="1"
+                   android:id="@+id/etcodeuser"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:hint="@string/codeutilisateur"
+                   android:inputType="number"
+                   android:maxLength="3"
+                   android:nextFocusDown="@+id/etAdresseEmail"/>
+
+               <View
+
+                   android:layout_width="0dp"
+                   android:layout_weight="1"
+                   android:layout_height="wrap_content"/>
+
+           </LinearLayout>
+           <!-- END LL CODE USER -->
+           <!-- LL ADDRESSE EMAIL + USERNAME-->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:layout_weight="1"
+        android:id="@+id/etAdresseEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="utilisateur@domaine.com"
+        android:inputType="textEmailAddress"
+        android:nextFocusForward="@+id/etUName"/>
+
+    <EditText
+
+        android:id="@+id/etUName"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:hint="nom d'uilisateur"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        android:nextFocusDown="@+id/etPword"/>
+
+</LinearLayout>
+           <!-- END LL ADDRESSE EMAIL + USERNAME-->
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:background="@color/colorPrimary"
+               android:layout_marginTop="20dp"
+               android:layout_marginBottom="20dp"/>
+        <!-- LL PASSWORD + PASWORD VRIF-->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <EditText
+        android:id="@+id/etPword"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:hint="mot de passe"
+        android:inputType="textPassword"
+        android:nextFocusRight="@id/etPword" />
+
+    <EditText
+        android:id="@+id/etPwordVerif"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:hint="retapez mot de passe"
+        android:inputType="textPassword"
+        android:nextFocusDown="@+id/etTel"/>
+
+</LinearLayout>
+        <!-- END LL PASSWORD + PASWORD VRIF-->
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/colorPrimary"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp"/>
+        <!-- LL NUMTEL+ TYPE-->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <EditText
+        android:id="@+id/etTel"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:hint="N° Telephone"
+        android:inputType="phone"
+       android:maxLength="8"/>
+    <TextView
+        android:textColor="@color/colorPrimary"
+        android:gravity="right"
+        android:textSize="15sp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="sous la direction de :"/>
+    <Spinner
+        android:id="@+id/spTypeUser"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+        <!-- END LL NUMTEL+ TYPE-->
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:background="@color/colorPrimary"
+               android:layout_marginTop="20dp"
+               android:layout_marginBottom="20dp"/>
+        <!-- LL PHOTO-->
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/ivPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:src="@drawable/img" />
+    <Button
+        android:id="@+id/btnPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btnAddPhotoOnClick"
+        android:text="Ajouter Photo"
+        android:textColor="@color/colorPrimary"/>
+
+</LinearLayout>
+        <!-- END LL PHOTO-->
+
+       </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
+

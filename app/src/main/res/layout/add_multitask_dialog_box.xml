@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="500dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Indiquer Le N°: Dossier"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"/>
+
+        <LinearLayout
+
+            android:id="@+id/llnmd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+
+            <RadioGroup
+                android:id="@+id/radiotypedoss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+
+                    android:id="@+id/radioR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="25dp"
+                    android:checked="true"
+                    android:text="R"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/radioS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="S"
+                    android:textSize="20sp" />
+
+            </RadioGroup>
+
+            <EditText
+
+                android:id="@+id/etNumDoss"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/radiotype"
+                android:hint=". . . ."
+                android:inputType="number"
+                android:maxLength="4"
+                android:textColorHint="@color/colorAccent"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/slsh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@+id/etNumDoss"
+                android:text="/"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/etNumDossP"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/slsh"
+                android:hint=". . . ."
+                android:inputType="number"
+                android:maxLength="4"
+                android:textColorHint="@color/colorAccent"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <!-- CLIENT -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Indiquer le nom du client:"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"/>
+        <LinearLayout
+            android:id="@+id/llnc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/etClient"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/llnmd"
+                android:hint="nom du client..."
+                android:textColorHint="@color/colorAccent"
+                android:textSize="20sp"
+                android:inputType="textPersonName"
+                android:imeOptions="actionSend|actionGo"/>
+        </LinearLayout>
+        <!-- END CLIENT -->
+<LinearLayout
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/btnadddossier"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Enregistrer"
+        android:textColor="@color/colorPrimary" />
+
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/btncancel"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Annuler"
+        android:textColor="@color/colorPrimary" />
+</LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

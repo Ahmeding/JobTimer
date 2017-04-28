@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="tn.com.hitechart.eds.Activities.Users.DashboardUser">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/lbluser"
+                    android:textColor="@color/lblconnectas"
+                    android:textSize="@dimen/lblconnectas"/>
+                <TextView
+
+                    android:gravity="center"
+                    android:id="@+id/tvloggeduser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/lblconnectas"
+                    android:textSize="@dimen/lblconnectas"/>
+            </LinearLayout>
+
+
+
+</android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_dashbord_user"/>
+<LinearLayout
+
+    android:layout_gravity="bottom|end"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <Button
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/btnviewrapport"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:onClick="onViewRapport"
+        android:text="Consulter rapport"
+        android:textSize="15sp"
+        android:textColor="@color/colorPrimary"/>
+    <Button
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/btnconsulthistoriqueuser"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:onClick="onConsulterHistoriqueUser"
+        android:text="Consulter Historique"
+        android:textSize="15sp"
+        android:textColor="@color/colorPrimary"/>
+
+
+</LinearLayout>
+
+    <!--
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            app:srcCompat="@android:drawable/ic_dialog_email" />
+            -->
+
+</android.support.design.widget.CoordinatorLayout>

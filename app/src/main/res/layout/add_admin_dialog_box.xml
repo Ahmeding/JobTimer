@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="500dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="Tapez Adresse Email"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/lbldboxaddadmin" />
+
+            <EditText
+                android:id="@+id/etAdresseEmailadmin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="utilisateur@domaine.com"
+                android:inputType="textEmailAddress"
+                android:nextFocusForward="@+id/etUName" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tapez Nom d'utilisateur"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/lbldboxaddadmin" />
+
+            <EditText
+
+                android:id="@+id/etUNameadmin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="nom d'uilisateur"
+                android:inputType="textPersonName"
+                android:nextFocusDown="@+id/etPword" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tapez Mot De Passe"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/lbldboxaddadmin" />
+
+            <EditText
+                android:id="@+id/etPwordadmin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="mot de passe"
+                android:inputType="textPassword"
+                android:nextFocusRight="@id/etPword" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Retapez Mot De Passe"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/lbldboxaddadmin" />
+
+            <EditText
+                android:id="@+id/etPwordVerifadmin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="retapez mot de passe"
+                android:inputType="textPassword"
+                android:nextFocusDown="@+id/etTel" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tapez N°.Telephone"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/lbldboxaddadmin" />
+
+            <EditText
+                android:id="@+id/etTeladmin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="N° Telephone"
+                android:inputType="phone"
+                android:maxLength="8" />
+
+            <Button
+                android:layout_gravity="center"
+                android:id="@+id/btnaddadmin"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Enregistrer"
+                android:textColor="@color/colorPrimary" />
+
+            <Button
+                android:layout_gravity="center"
+                android:id="@+id/btncancel"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Annuler"
+                android:textColor="@color/colorPrimary" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="app_bar_top_padding">0dp</dimen>
+    <dimen name="ET_QuicjSet_margin">16dp</dimen>
+    <dimen name="action_bar_height">56dp</dimen>
+    <dimen name="textlblRapport">20sp</dimen>
+    <dimen name="textvalueRapport">15sp</dimen>
+    <dimen name="textlblTitreRapport">25sp</dimen>
+    <dimen name="textbtnradionewtask">20dp</dimen>
+    <dimen name="textsizebtnstarttask">18sp</dimen>
+    <dimen name="lblconnectas">18sp</dimen>
+    <dimen name="lbldboxaddadmin">15sp</dimen>
+</resources>

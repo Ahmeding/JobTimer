@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/llachat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tapez votre message"/>
+        <EditText
+            android:id="@+id/etmsgbody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tapez un message..." />
+
+    </LinearLayout>
+
+
+    <Button
+
+        android:id="@+id/btnaddmsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llachat"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:width="200dp"
+        android:text="Ajouter" />
+</RelativeLayout>

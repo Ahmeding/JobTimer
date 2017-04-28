@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/etparamadressemail"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:width="200dp"
+        android:hint="utilisateur@domaine.com"
+        android:inputType="textEmailAddress"/>
+
+    <Button
+        android:id="@+id/btnsaveadressemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etparamadressemail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:width="200dp"
+        android:onClick="onaddEmailadresse"
+        android:text="Ajouter" />
+</RelativeLayout>
